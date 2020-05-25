@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "s3_txt_bucket" {
-  bucket = "${var.environment}-leomar-test-bucket"
+  bucket = "${var.environment}-${var.owner}-test-bucket"
   acl    = "private"
 
   tags = {
